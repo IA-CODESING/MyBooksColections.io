@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <title>Book´s Colection´s</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">My <span class="text-danger">Books</span> Colections</h1>
+        <form id="libro-form">
+            <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="titulo" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="title">Author</label>
+            <input type="text" id="autor" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="title">#ISBN</label>
+            <input type="text" id="isbn" class="form-control">
+        </div>
+        <input type="submit" value="Add to Colection" class="btn btn-outline-dark mt-lg-4">
+    </form>
+
+    <table class="table table-warning mt-5 text-center">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>#ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="libro-list">
+
+        </tbody>
+    </table>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
